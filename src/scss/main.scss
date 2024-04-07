@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700,800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+$base-color: #8a9ef3;
+$font-color:#494949;
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/variables";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "./common.scss";
+@import "./navbar.scss";
+@import "./hero.scss";
+@import "./features.scss";
+@import "./testimonials.scss";

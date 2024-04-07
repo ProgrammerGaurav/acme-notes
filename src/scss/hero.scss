@@ -1,0 +1,71 @@
+.hero {
+	height: 100vh;
+	position: relative;
+	align-items: center;
+
+	.title {
+		font-weight: 700;
+		font-size: 3rem;
+		color: $font-color;
+		span {
+			color: $base-color;
+			font-size: 98px;
+			line-height: 0;
+		}
+	}
+	.subtitle {
+		font-weight: 600;
+		font-size: 1.2rem;
+		color: $font-color;
+		opacity: 0.8;
+	}
+	.main-image {
+		width: 100%;
+		// max-width: 200px;
+		margin: auto 0;
+		transform: scale(1.2);
+	}
+	.signup-btn {
+		background-color: $base-color;
+		color: #fff;
+		margin-top: 60px;
+		font-size: 2rem;
+		border-radius: 4px;
+		padding: 18px 54px;
+		font-size: 1.1rem;
+	}
+	.down-arrow {
+		position: absolute;
+		top: calc(100vh - 60px);
+		left: calc(50% - 14px);
+
+		animation: jumpInfinite 1.5s infinite;
+		img {
+			max-width: 30px;
+		}
+	}
+
+	@keyframes jumpInfinite {
+		0% {
+			margin-top: 0;
+		}
+		50% {
+			margin-top: 20px;
+		}
+		100% {
+			margin-top: 0;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.title {
+			font-size: 2rem;
+			margin-bottom: 0;
+			span {
+			}
+		}
+		.subtitle {
+			font-size: 1rem;
+		}
+	}
+}
