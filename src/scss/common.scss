@@ -1,13 +1,18 @@
-.container-fluid{
-    max-width: 1200px;
+.container-fluid {
+	max-width: 1200px;
 }
 
 .signup-btn {
-    background-color: $base-color;
-    padding: 5px 30px;
-    border-radius: 30px;
-    font-weight: 700;
-    border: none;
-    color: $white;
-    text-transform: uppercase;
+	background-color: $base-color;
+	padding: 5px 30px;
+	border-radius: 30px;
+	font-weight: 700;
+	border: none;
+	color: $white;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $base-color;
+		color: $white;
+		opacity: 0.8;
+	}
 }

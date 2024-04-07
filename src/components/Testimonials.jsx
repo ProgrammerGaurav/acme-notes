@@ -24,6 +24,15 @@ const Testimonials = () => {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	};
 
 	return (
@@ -33,12 +42,9 @@ const Testimonials = () => {
 				<div className="row">
 					<Slider {...settings} className="slider-container">
 						{testimonials.map((testimonial) => (
-							<div className="col-md-12 col-lg-4 ">
+							<div className="col-md-12 col-lg-4" key={testimonial.name}>
 								<div className="testmonial">
-									<img
-										src="https://st2.depositphotos.com/1006318/5909/v/450/depositphotos_59094701-stock-illustration-businessman-profile-icon.jpg"
-										alt=""
-									/>
+									<img src="profle-pic.webp" alt="" />
 									<div className="name">{testimonial.name}</div>
 									<div className="quote">{testimonial.quote}</div>
 								</div>

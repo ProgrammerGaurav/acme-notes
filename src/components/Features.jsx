@@ -25,9 +25,9 @@ const Features = () => {
 				<h2 className="header">Features</h2>
 				<div className="row">
 					{features.map((feature) => (
-						<div className="col-md-6 col-lg-3">
+						<div className="col-md-6 col-lg-3" key={feature.title}>
 							<div className="card feature">
-								<i class={`bi ${feature.icon}`}></i>
+								<i className={`bi ${feature.icon}`}></i>
 								<div className="title">{feature.title}</div>
 							</div>
 						</div>

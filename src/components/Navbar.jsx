@@ -20,7 +20,7 @@ const NavbarComponent = () => {
 		<nav className={`navbar navbar-expand-lg ${isScrolled ? "scrolled" : ""}`}>
 			<div className="container-fluid">
 				<a className="navbar-brand" href="/">
-					<img src="/logo.png" alt="" />
+					<img src="/logo.webp" alt="" />
 					<div>Acme Notes </div>
 				</a>
 				<button
